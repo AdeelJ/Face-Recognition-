@@ -8,25 +8,11 @@
 ### Overview
 
 
-The objective of this project is to detect
-whether the driver driving the car is doing any activity that can cause
-accident or any other harm to the driver or any other person moving on the
-road. We are given driver images, each taken in a car with a
-driver doing something in the car (texting, eating, talking on the phone,
-makeup, reaching behind, etc). Your goal is to predict the
-likelihood of what the driver is doing in each picture. 
+The objective of this project is to detect human face i.e.: facial recognition. 
 
-
-During the training phase, we have a dataset that have different
-types of images classified into 10 classes(downloaded from Kaggle) , and every
-class has an image of a driver performing different type of distracting
-activity.we use those recorded data to train our neural network. Trained model
-was tested on our own dataset that has around 31 images ,the accuracy on that
-dataset is around 13% , the reason is the angle as we didnt flip the pictures
-while training our model on Kaggle's Dataset, Their steering is on the left
-side and our's is on the right so thats why the accuracy is around 13% but when
-we had tested the dataset with some kaggle dataset images then we get an
-accuracy of 90%.
+Dataset was divided into 4 classes for training purpose. Trained model
+was tested on our own dataset that had around 50 images. The accuracy on that
+dataset is around 7%. 
 
 
 
@@ -87,7 +73,7 @@ of this file.
 ### Dataset Statistics
 
 
-The dataset consists of 25000 images. The training dataset contains
+The dataset consists of 7K+ images. The training dataset contains
 a lot of different angle images. Therefore, preprocessing images and respective
 steering angles are necessary in order to generalize the training model for our
 validation dataset
@@ -134,8 +120,8 @@ car with the same position as in kaggle’s dataset. However, the dataset that
 has around 31 images ,the accuracy on that dataset is around 13% , the reason
 is the ‘angle’ as we didnt flip the pictures while training our model on
 Kaggle's Dataset, Their steering is on the left side and our's is on the right
-so thats why the accuracy is around 13% but when we had tested the dataset with
-some kaggle dataset images then we get an accuracy of 90%.
+so thats why the accuracy is around 6% but when we had tested the dataset with
+datatset of university of essex, then we get an accuracy of 99%.
 
 
 #### Training
