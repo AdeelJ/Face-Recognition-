@@ -17,44 +17,6 @@ makeup, reaching behind, etc). Your goal is to predict the
 likelihood of what the driver is doing in each picture. 
 
 
-The 10 classes to
-predict are:
-
-
-c0: safe driving
-
-
-c1: texting - right
-
-
-c2: talking on the phone -
-right
-
-
-c3: texting - left
-
-
-c4: talking on the phone - left
-
-
-c5: operating the radio
-
-
-c6: drinking
-
-
-c7: reaching behind
-
-
-c8: hair and makeup
-
-
-c9: talking to passenger
-
-
- 
-
-
 During the training phase, we have a dataset that have different
 types of images classified into 10 classes(downloaded from Kaggle) , and every
 class has an image of a driver performing different type of distracting
@@ -74,24 +36,12 @@ accuracy of 90%.
 This project requires **Python 3.5** and the following
 Python libraries installed:
 
-
-- [Keras](https://keras.io/)
 - [NumPy](http://www.numpy.org/)
 - [SciPy](https://www.scipy.org/)
 - [TensorFlow](http://tensorflow.org)
 - [Pandas](http://pandas.pydata.org/)
-- [OpenCV](http://opencv.org/)
 - [Matplotlib](http://matplotlib.org/) (Optional)
 - [Jupyter](http://jupyter.org/) (Optional)
-
-
-Run this command at the terminal prompt to install
-[OpenCV](http://opencv.org/). Useful for image processing(if in case you are
-doing real time detection):
-
-
-- `conda install -c https://conda.anaconda.org/menpo
-opencv3`
 
 
 ### How to Run the Model
