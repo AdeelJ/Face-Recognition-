@@ -86,9 +86,7 @@ The next step is random flip stage. In this stage we randomly flip images with 0
 
 Even after cropping and resizing training images (with all
 augmented images), training dataset was very large and it could not fit into
-the main memory. Hence, we used `fit_generator` API of the Keras library for
-training our model.
-
+the main memory. 
 
 ## Results
 
