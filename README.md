@@ -54,7 +54,7 @@ trained model which you can directly run using the following command.
 During the training the image preloader loads the dataset
 and saves it in X and Y. X is the input while Y is output. After we form a
 network of convolutional layer, we assign the network. Afterwards, run it for 5 epoche with
-batch-size '64',learning rate alpha=0.01 and then save the model. The following figures were the results of training.
+batch-size '64',learning rate alpha=0.001 and then save the model. The following figures were the results of training.
 
 
 ![left](./dav_exp.7.jpg) |
@@ -75,10 +75,8 @@ http://cswww.essex.ac.uk/mv/allfaces/
 
 ### Data Processing 
 
-First of all we apply random shear operation but we only select images with 0.5 probability for the random
-shearing process. 
 
-The next step is random flip stage. In this stage we randomly flip images with 0.5 probability. In the final state of the pipeline, we resize images to 100x100 in order to reduce training time. 
+The next stage we have a dropout probablity of  0.5. In the final state of the pipeline, we resize images to 100x100 in order to reduce training time. 
 
 
 ### Training
